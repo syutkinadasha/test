@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap')
+
+$base-font-color: #1A212F
+$base-header-color: #151B28
+$order-button: #FF7236
+$order-button-hover: #F05B1B
+$order-button-color: #fff
+$filter-button-color: #FAC663
+$border-color: #E1E1E1
+
+$base-width: 1200px
+
+html
+	padding: 0
+	margin: 0
+
+body
+	padding: 0
+	margin: 0
+	background: #fff
+	color: $base-font-color
+	font:
+		family: 'Lato', sans-serif
+		size: 14px
+		weight: normal
+
+ul, li
+	list-style: none
+	padding: 0
+	margin: 0
+
+input, textarea, button
+	font:
+		family: 'Lato', sans-serif
+		size: 14px
+	outline: none
+	border: none
+	color: $base-font-color
+
+button, a
+	cursor: pointer
+
+a, a:link, a:hover
+	text-decoration: none
+	color: $base-font-color
+
+/* icons */
+.icon
+	&-service
+		&_empty
+			background: url(images/service_empty.svg) no-repeat center
+		&_1
+			background: url(images/service_1.svg) no-repeat center
+		&_2
+			background: url(images/service_2.svg) no-repeat center
+		&_3
+			background: url(images/service_3.svg) no-repeat center
+		&_4
+			background: url(images/service_4.svg) no-repeat center
+
+
+@import "App"
+@import "component/Header/Header"
+@import "component/Title/Title"
+@import "component/Card/Card"
+@import "component/Filter/Filter"
+@import "component/Sort/Sort"
